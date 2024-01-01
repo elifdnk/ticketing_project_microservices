@@ -13,6 +13,7 @@
         <module>task-service</module>
         <module>app-client-management</module>
         <module>discovery-service</module>
+        <module>gateway-service</module>
     </modules>
 
     <parent>
@@ -97,6 +98,12 @@
                 <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
                 <version>${spring-cloud.version}</version>
                 <!--through this our dependency,instances,services,microservices is gonna register in eureka -->
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${spring-cloud.version}</version>
             </dependency>
 
             <dependency>
