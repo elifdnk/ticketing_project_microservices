@@ -2,12 +2,16 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/config
+        git:
+          uri: https://github.com/elifdnk/ticketing_project_microservices_config
+          default-label: main
+          username: elifdnk
+          password: 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
+      fail-fast: true
 
 server:
   port: 8888
