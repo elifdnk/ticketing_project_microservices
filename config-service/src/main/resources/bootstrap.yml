@@ -10,8 +10,11 @@ spring:
           uri: https://github.com/elifdnk/ticketing_project_microservices_config
           default-label: main
           username: elifdnk
-          password: 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
+          password: '{cipher}ac55ed04c0445a9827b1c191fae6086d80537c523b6b01fd9acccb754448fd6fffc859fdd9e7a31eea062ef7f45910eaaf7894f44e6d5d5e5b96f855c58648e1'
       fail-fast: true
+
+encrypt:
+  key: cydeo
 
 server:
   port: 8888
